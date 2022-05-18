@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-public class Stringer
+﻿namespace Calculator
 {
-    public static int HowManyTimes(string read, char value)
+    public static class Stringer
     {
-        string[] ar = read.Split(value);
-        int num = ar.Length - 1;
-        return num;
+        public static int HowManyTimes(string read, char value)
+        {
+            var ar = read.Split(value);
+            var num = ar.Length - 1;
+            return num;
+        }
     }
 }
-
