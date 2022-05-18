@@ -1,24 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 
 namespace Calculator
 {
-    public class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             ConsoleKeyInfo key;
             do
             {
-                double i = Input.Double("Input: ");
+                Input.Double("Input: ");
                 Console.WriteLine("Нажмите Enter для продолжения");
                 key = Console.ReadKey();
-            }
-            while (key.Key == ConsoleKey.Enter);
+            } while (key.Key == ConsoleKey.Enter);
         }
     }
 }
